@@ -37,6 +37,5 @@ export class VideoPage {
            },
            (err: CaptureError) => console.error(err)
        );
- }
-
-}
+     }
+   }

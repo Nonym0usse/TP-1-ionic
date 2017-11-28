@@ -18,10 +18,9 @@
 
 <ion-content padding>
   <h1>getCurrentPosition</h1>
-    <span>{{ coords1.latitude }}</span> && <span>{{ coords1.longitude }}</span>
+    <span>{{ coord1.latitude }}</span> && <span>{{ coord1.longitude }}</span>
 
     <h1>Watchposition</h1>
 
-    <span>{{ coords2.longitude }}</span> && <span>{{ coords2.longitude }}</span>
-
+ <p  *ngFor="let tab of coord2"> latitude : {{tab.latitude}}, longitude : {{tab.longitude}}</p>
 </ion-content>
