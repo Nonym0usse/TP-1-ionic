@@ -101,10 +101,12 @@
         <variable name="GEOLOCATION_USAGE_DESCRIPTION" value="To locate you" />
     </plugin>
     <plugin name="cordova-plugin-googlemaps" spec="^2.1.1">
-        <variable name="API_KEY_FOR_ANDROID" value="AIzaSyBIPpQD_aXpQhlJQQSVqQHviaflp8PXNY4" />
-        <variable name="API_KEY_FOR_IOS" value="AIzaSyABLly9drv49CcaV_J0xIVffoI29d9KhIs" />
+        <variable name="API_KEY_FOR_ANDROID" value="YOUR_ANDROID_API_KEY_IS_HERE" />
+        <variable name="API_KEY_FOR_IOS" value="YOUR_IOS_API_KEY_IS_HERE" />
         <variable name="LOCATION_WHEN_IN_USE_DESCRIPTION" value="Show your location on the map" />
         <variable name="LOCATION_ALWAYS_USAGE_DESCRIPTION" value="Trace your location on the map" />
     </plugin>
     <plugin name="nl.x-services.plugins.videocaptureplus" spec="~1.0.0" />
+    <plugin name="cordova-plugin-media-capture" spec="^2.0.0" />
+    <plugin name="com.moust.cordova.videoplayer" spec="https://github.com/moust/cordova-plugin-videoplayer.git" />
 </widget>

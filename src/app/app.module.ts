@@ -3,7 +3,7 @@ import { ErrorHandler, NgModule } from '@angular/core';
 import { IonicApp, IonicErrorHandler, IonicModule } from 'ionic-angular';
 import { MyApp } from './app.component';
 import { HomePage } from '../pages/home/home';
-import { ListPage } from '../pages/list/list';
+import { VideoPage } from '../pages/video/video';
 import { GeolocalisationPage } from '../pages/geolocalisation/geolocalisation';
 import { GooglemapsPage } from '../pages/googlemaps/googlemaps';
 import { GyroscopePage } from '../pages/gyroscope/gyroscope';
@@ -21,13 +21,16 @@ import { TextToSpeechPage } from '../pages/text-to-speech/text-to-speech';
 import { TextToSpeech } from '@ionic-native/text-to-speech';
 import { Geolocation } from '@ionic-native/geolocation';
 import { GoogleMaps } from '@ionic-native/google-maps';
+import { VideoPlayer } from '@ionic-native/video-player';
+import { MediaCapture, MediaFile, CaptureError, CaptureImageOptions } from '@ionic-native/media-capture';
+
 
 
 @NgModule({
   declarations: [
     MyApp,
     HomePage,
-    ListPage,
+    VideoPage,
     GeolocalisationPage,
     GooglemapsPage,
     GyroscopePage,
@@ -44,7 +47,7 @@ import { GoogleMaps } from '@ionic-native/google-maps';
   entryComponents: [
     MyApp,
     HomePage,
-    ListPage,
+    VideoPage,
     GeolocalisationPage,
     GooglemapsPage,
     GyroscopePage,
@@ -63,6 +66,8 @@ import { GoogleMaps } from '@ionic-native/google-maps';
     Vibration,
     TextToSpeech,
     GoogleMaps,
+    VideoPlayer,
+    MediaCapture,
     {provide: ErrorHandler, useClass: IonicErrorHandler}
   ]
 })
