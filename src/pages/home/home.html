@@ -1,18 +1,18 @@
 <ion-header>
-  <ion-navbar>
+  <ion-navbar color="dark">
     <button ion-button menuToggle>
       <ion-icon name="menu"></ion-icon>
     </button>
-    <ion-title>Home</ion-title>
+    <ion-title>Appareil Photo</ion-title>
   </ion-navbar>
 </ion-header>
 
 <ion-content padding>
-  <h3>Ionic Menu Starter</h3>
+  <h3 class="apn-button">Bienvenue sur l'appareil photo.</h3>
 
-  <p>
-    If you get lost, the <a href="http://ionicframework.com/docs/v2">docs</a> will show you the way.
-  </p>
+  <button ion-button color="dark" icon-camera round>
+  <ion-icon name="camera" (click)='webcam();'></ion-icon></button>
 
-  <button ion-button secondary menuToggle>Toggle Menu</button>
+  <img [src]="base64Image" *ngIf="base64Image" />
+
 </ion-content>
