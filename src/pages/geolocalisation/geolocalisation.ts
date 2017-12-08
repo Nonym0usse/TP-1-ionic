@@ -26,10 +26,6 @@ export class GeolocalisationPage {
     this.geo();
   }
 
- ionViewDidLoad() {
-    console.log('ionViewDidLoad GeolocPage');
-  }
-
  geo(){
 
    this.geolocation.getCurrentPosition().then((resp) => {

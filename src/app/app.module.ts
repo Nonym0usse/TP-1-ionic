@@ -6,6 +6,7 @@ import { HomePage } from '../pages/home/home';
 import { VideoPage } from '../pages/video/video';
 import { GeolocalisationPage } from '../pages/geolocalisation/geolocalisation';
 import { GooglemapsPage } from '../pages/googlemaps/googlemaps';
+import { ShakePage } from '../pages/shake/shake';
 import { GyroscopePage } from '../pages/gyroscope/gyroscope';
 import { ToastPage } from '../pages/toast/toast';
 import { Camera, CameraOptions } from '@ionic-native/camera';
@@ -23,6 +24,9 @@ import { Geolocation } from '@ionic-native/geolocation';
 import { GoogleMaps } from '@ionic-native/google-maps';
 import { VideoPlayer } from '@ionic-native/video-player';
 import { MediaCapture, MediaFile, CaptureError, CaptureImageOptions } from '@ionic-native/media-capture';
+import { Shake } from '@ionic-native/shake';
+import { QrcodePage } from '../pages/qrcode/qrcode';
+import { QRScanner, QRScannerStatus } from '@ionic-native/qr-scanner';
 
 
 
@@ -37,7 +41,9 @@ import { MediaCapture, MediaFile, CaptureError, CaptureImageOptions } from '@ion
     ToastPage,
     VibrationPage,
     FonctionPage,
-    TextToSpeechPage
+    TextToSpeechPage,
+    ShakePage,
+    QrcodePage
   ],
   imports: [
     BrowserModule,
@@ -54,7 +60,9 @@ import { MediaCapture, MediaFile, CaptureError, CaptureImageOptions } from '@ion
     ToastPage,
     VibrationPage,
     FonctionPage,
-    TextToSpeechPage
+    TextToSpeechPage,
+    ShakePage,
+    QrcodePage
   ],
   providers: [
     Camera,
@@ -68,6 +76,8 @@ import { MediaCapture, MediaFile, CaptureError, CaptureImageOptions } from '@ion
     GoogleMaps,
     VideoPlayer,
     MediaCapture,
+    Shake,
+    QRScanner,
     {provide: ErrorHandler, useClass: IonicErrorHandler}
   ]
 })

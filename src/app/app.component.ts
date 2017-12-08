@@ -10,7 +10,10 @@ import { GyroscopePage } from '../pages/gyroscope/gyroscope';
 import { ToastPage } from '../pages/toast/toast';
 import { VibrationPage } from '../pages/vibration/vibration';
 import { FonctionPage } from '../pages/fonction/fonction';
+import { ShakePage } from '../pages/shake/shake';
 import { TextToSpeechPage } from '../pages/text-to-speech/text-to-speech';
+import { QrcodePage } from '../pages/qrcode/qrcode';
+
 
 @Component({
   templateUrl: 'app.html'
@@ -35,7 +38,9 @@ export class MyApp {
       { title: 'Toast', component: ToastPage},
       { title: 'Vibration', component: VibrationPage},
       { title: 'Autre fonctionnalité', component: FonctionPage},
-      { title: 'TextToSpeech', component: TextToSpeechPage}
+      { title: 'TextToSpeech', component: TextToSpeechPage},
+      { title: 'Shake', component: ShakePage},
+      { title: 'QR Code', component: QrcodePage}
     ];
 
   }
