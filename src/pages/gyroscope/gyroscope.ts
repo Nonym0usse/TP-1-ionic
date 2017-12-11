@@ -24,9 +24,21 @@ export class GyroscopePage {
        frequency: 1000
     };
 
-    this.gyroscope.watch()
-       .subscribe((orientation: GyroscopeOrientation) => {
-          console.log(orientation.x, orientation.y, orientation.z, orientation.timestamp);
-       });
-  }
+    this.gyroscope.getCurrent(options)
+  .then((orientation: GyroscopeOrientation) => {
+   })
+  .catch()
+
+
+  this.gyroscope.watch()
+     .subscribe((orientation: GyroscopeOrientation) => {
+        console.log(orientation.x, orientation.y, orientation.z, orientation.timestamp);
+     });
 }
+}
+
+class getGyro{
+
+ constructor( public orientationX: number, public orientationY: number, public orientationZ: number){ }
+
+ }

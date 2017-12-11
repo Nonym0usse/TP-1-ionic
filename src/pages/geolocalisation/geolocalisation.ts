@@ -38,11 +38,9 @@ export class GeolocalisationPage {
 
    let watch = this.geolocation.watchPosition();
     watch.subscribe((data) => {
-     // data can be a set of coordinates, or an error (if an error occurred).
      this.coord2.push(new Geodeux(data.coords.latitude, data.coords.longitude));
 
    });
-
 
  }
 
