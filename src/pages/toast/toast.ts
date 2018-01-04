@@ -8,6 +8,10 @@ import { ToastController } from 'ionic-angular';
  * See https://ionicframework.com/docs/components/#navigation for more info on
  * Ionic pages and navigation.
  * VELLA CYRIL - B3 Ingésup
+ *
+ * ici, nous avons les toasts qui sont appelés si l'utilisateur appuie sur un bouton.
+ * la fonction create() prend en parametre la durée d'affichage du toast, leur position, et une chaine pour afficher les infos et
+ * pour finir, une option permettant de fermer le toast.
  */
 
 @IonicPage()

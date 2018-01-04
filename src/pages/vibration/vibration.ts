@@ -8,6 +8,8 @@ import { Vibration } from '@ionic-native/vibration';
  * See https://ionicframework.com/docs/components/#navigation for more info on
  * Ionic pages and navigation.
  * VELLA CYRIL - B3 Ingésup
+ *
+ * ici, on a un bouton qui fait appel a la fonction vibreur() pour faire vibrer le téléphone.
  */
 
 @IonicPage()

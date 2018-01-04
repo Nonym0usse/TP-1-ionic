@@ -2,11 +2,10 @@ import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
 
 /**
- * Generated class for the FonctionPage page.
- *
- * See https://ionicframework.com/docs/components/#navigation for more info on
- * Ionic pages and navigation.
- */
+* Fonction qui sert à voir en temps réel le résultat du formulaire dans la partie html.
+* On a aussi un appel à la fonction konsole lorsqu'on clique sur le bouton.
+*
+*/
 
 @IonicPage()
 @Component({
@@ -17,7 +16,7 @@ export class FonctionPage {
   app:AppData;
 
   constructor(public navCtrl: NavController, public navParams: NavParams) {
-    this.app = new AppData("nom", 0.3);
+    this.app = new AppData("nom", 0.3);  //appel au constructeur de la classe AppData lors de la création de la vue HTML.
   }
 
   konsole(){
@@ -26,7 +25,7 @@ export class FonctionPage {
 
 }
 
-class AppData{
+class AppData{ //Classe ayant un constrcuteur qui prend un paramètre une chaine de caractère et un entier / décimal.
     constructor(public nom: string, public version: Number){
 
     }

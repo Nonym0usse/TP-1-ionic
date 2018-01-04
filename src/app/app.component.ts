@@ -2,6 +2,10 @@ import { Component, ViewChild } from '@angular/core';
 import { Nav, Platform } from 'ionic-angular';
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
+
+/** PAGES **/
+
+
 import { VideoPage } from '../pages/video/video';
 import { HomePage } from '../pages/home/home';
 import { GeolocalisationPage } from '../pages/geolocalisation/geolocalisation';
@@ -13,7 +17,7 @@ import { FonctionPage } from '../pages/fonction/fonction';
 import { ShakePage } from '../pages/shake/shake';
 import { TextToSpeechPage } from '../pages/text-to-speech/text-to-speech';
 import { QrcodePage } from '../pages/qrcode/qrcode';
-
+import { Socialsharing } from '../pages/socialsharing/socialsharing';
 
 @Component({
   templateUrl: 'app.html'
@@ -40,7 +44,8 @@ export class MyApp {
       { title: 'Autre fonctionnalité', component: FonctionPage},
       { title: 'TextToSpeech', component: TextToSpeechPage},
       { title: 'Shake', component: ShakePage},
-      { title: 'QR Code', component: QrcodePage}
+      { title: 'QR Code', component: QrcodePage},
+      { title: 'Socialsharing', component: Socialsharing}
     ];
 
   }

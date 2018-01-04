@@ -111,4 +111,5 @@
     <plugin name="cordova-plugin-shake" spec="^0.6.0" />
     <plugin name="cordova-plugin-qrscanner" spec="^2.5.0" />
     <plugin name="nl.x-services.plugins.videocaptureplus" spec="~1.0.0" />
+    <plugin name="cordova-plugin-x-socialsharing" spec="^5.2.1" />
 </widget>

@@ -16,6 +16,12 @@ public base64Image: string;
     constructor(public navCtrl: NavController, private camera: Camera, private localNotifications: LocalNotifications, private base64ToGallery: Base64ToGallery) {
   }
 
+  /**
+  * Utilisation de la caméra pour prendre une photo au click du bouton HTML.
+  * L'image est ensuite sauvegardé dans la gallerie du téléphone.
+  * On a une gestion d'erreur en cas de problème ou le téléphone renvoie une notif.
+  */
+
     webcam(){
         const options: CameraOptions = {
             quality: 100,
@@ -43,7 +49,6 @@ public base64Image: string;
             title: "Ionic App",
             text: data,
             at: new Date(new Date().getTime() + 0),
-            icon: 'http://nodeimpact.com/images/favicons/apple-icon-57x57.png', //uniquement pour android
             badge: 1,
             led: '888888' //led notifications pour android uniquement, couleur rouge
         });
