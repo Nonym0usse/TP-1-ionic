@@ -102,7 +102,6 @@ $ bower install ngCordova
 - [Toast](https://github.com/EddyVerbruggen/Toast-PhoneGap-Plugin)
 - [Touchid](https://github.com/leecrossley/cordova-plugin-touchid)
 - [Vibration](https://github.com/apache/cordova-plugin-vibration) *
-- [Video Capture Plus](https://github.com/EddyVerbruggen/VideoCapturePlus-PhoneGap-Plugin) *
 - [Zip](https://github.com/MobileChromeApps/cordova-plugin-zip)
 
 `* official Apache Cordova Plugin`
