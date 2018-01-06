@@ -1,4 +1,4 @@
-import { GoogleMap, LatLng, Marker } from '@ionic-native/google-maps';
+import { LatLng } from '@ionic-native/google-maps';
 import { Component, ViewChild, ElementRef } from "@angular/core/";
 import { NavController, NavParams } from 'ionic-angular';
 import { Geolocation } from '@ionic-native/geolocation';
@@ -9,8 +9,7 @@ declare var google: any;
 
 /**
 * Ici on a la page Google Maps avec la géolocalisation de l'utilisateur avec un marker.
-* Ce n'est pas du natif, mais c'est un appel à l'API Google Maps avec Javascript.
-* Par contre la géolocalisation est bien native au téléphone de l'utilisateur.
+* On utilise aussi la géoloc pour set un marker à la position de l'utilisateur
 */
 
 @Component({

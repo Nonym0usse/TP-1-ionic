@@ -20,21 +20,20 @@ import { SocialsharingPageModule } from '../pages/socialsharing/socialsharing.mo
 
 /** FONCTIONNALITES **/
 
-import { Camera, CameraOptions } from '@ionic-native/camera';
+import { Camera } from '@ionic-native/camera';
 import { LocalNotifications } from '@ionic-native/local-notifications';
 import { Base64ToGallery } from '@ionic-native/base64-to-gallery';
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
-import { Gyroscope, GyroscopeOrientation, GyroscopeOptions } from '@ionic-native/gyroscope';
 import { Vibration } from '@ionic-native/vibration';
 import { TextToSpeech } from '@ionic-native/text-to-speech';
 import { Geolocation } from '@ionic-native/geolocation';
-import { GoogleMaps } from '@ionic-native/google-maps';
 import { VideoPlayer } from '@ionic-native/video-player';
-import { MediaCapture, MediaFile, CaptureError, CaptureImageOptions } from '@ionic-native/media-capture';
+import { MediaCapture } from '@ionic-native/media-capture';
 import { Shake } from '@ionic-native/shake';
-import { QRScanner, QRScannerStatus } from '@ionic-native/qr-scanner';
+import { QRScanner } from '@ionic-native/qr-scanner';
 import { SocialSharing } from '@ionic-native/social-sharing';
+import { Gyroscope } from '@ionic-native/gyroscope';
 
 
 
@@ -69,15 +68,15 @@ import { SocialSharing } from '@ionic-native/social-sharing';
     Base64ToGallery,
     LocalNotifications,
     StatusBar,
+    TextToSpeech,
     SplashScreen,
     Vibration,
-    TextToSpeech,
-    GoogleMaps,
     VideoPlayer,
     MediaCapture,
     Shake,
-    QRScanner,
+    Gyroscope,
     SocialSharing,
+    QRScanner,
     {provide: ErrorHandler, useClass: IonicErrorHandler}
   ]
 })

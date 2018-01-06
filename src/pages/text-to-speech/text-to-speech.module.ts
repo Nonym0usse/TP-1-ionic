@@ -1,7 +1,6 @@
 import { NgModule } from '@angular/core';
 import { IonicPageModule } from 'ionic-angular';
 import { TextToSpeechPage } from './text-to-speech';
-import { TextToSpeech } from '@ionic-native/text-to-speech';
 
 @NgModule({
   declarations: [

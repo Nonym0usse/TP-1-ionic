@@ -20,24 +20,25 @@ import { LocalNotifications } from '@ionic-native/local-notifications';
 export class QrcodePage {
 
   constructor(public navCtrl: NavController, public navParams: NavParams, private qrScanner: QRScanner, private localNotifications: LocalNotifications) {
+    console.log('Démarrage en cours...');
   }
 
   startQR()
   {
-      this.qrScanner.prepare()
+    this.qrScanner.prepare()
     .then((status: QRScannerStatus) => {
        if (status.authorized)
        {
          let scanSub = this.qrScanner.scan().subscribe((text: string) => {
-           this.notif(text);
+           console.log(text);
            this.qrScanner.hide();
            scanSub.unsubscribe();
          });
          this.qrScanner.show();
        } else if (status.denied) {
-         this.notif("Erreur. Merci de mettre les droits sur votre QrScanner.")
+         console.log("Erreur. Merci de mettre les droits sur votre QrScanner.")
        } else {
-         this.notif("Merci de mettre les droits sur votre QrScanner.")
+         console.log("Merci de mettre les droits sur votre QrScanner.")
       }
     })
     .catch((e: any) => console.log('Erreur:', e));
